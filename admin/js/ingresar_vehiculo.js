@@ -27,7 +27,7 @@ function guardar() {
     }
     console.log(enviar_data);
     
-    // let url = "http://localhost:5000/registro"
+    // let url = "http://localhost:5500/registro"
     let url = "https://vintagewheels.pythonanywhere.com/registro"
     var options = {
         body: JSON.stringify(enviar_data),
