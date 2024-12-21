@@ -32,30 +32,18 @@
                 <!-- Sección izquierda del menú con el logo y el título -->
                 <div class="nav_inicio">
                     <!-- Logo de la empresa -->
-                    <img src="image/Logo.jpg" class="Logo" alt="Moto Travel">
+                    <img src="image/Logo.png" class="Logo" alt="Moto Travel">
                     <!-- Título o nombre de la empresa -->
-                    <h1 class="Titulo">Moto Travel</h1>
+                    <!-- <h1 class="Titulo">Moto Travel</h1> -->
+                    <img src="image/isotipo.png" class="Titulo" alt="Moto Travel">
                 </div>
             </a>
-            <!-- 
-            <a href="./nosotros.html">
-                <div class="nav_centro">
-                    <h1 class="Titulo">Quienes Somos</h1>
-                </div>
-            </a>
-
-            <a href="./galeria.html">
-                <div class="nav_centro">
-                    <h1 class="Titulo">Galeria</h1>
-                </div>
-            </a>
-             -->
             <!-- Sección derecha del menú con iconos -->
             <div class="nav_inicio iconos">
                 <!-- Icono del carrito de compras -->
-                <a href="#"><box-icon class='icono' name='cycling' color='white'></box-icon></a>
+                <a href="renta.html"><box-icon class='icono' name='cycling' color='white'></box-icon></a>
                 <!-- Icono del perfil de usuario -->
-                <a href="#"><box-icon class='icono' name='face' color='white'></box-icon></a>
+                <a href="/admin" target="_blank"><box-icon class='icono' name='face' color='white'></box-icon></a>
             </div>
         </nav>
         <!-- Carrusel de imágenes (slideshow) -->
@@ -164,32 +152,37 @@
     
     <!-- Comienzo del pie de página -->
     <footer class="container">
-        <!-- Formulario de contacto -->
-        <form name="formContacto" id="formContacto" action="https://formspree.io/f/xqaklzbo" method="POST" onSubmit="return validarForm()">
-            <h1>Envíanos tu consulta</h1>
-            <!-- Campo para el nombre -->
-            <label for="nombre"><h1>Nombre</h1></label>
-            <input type="nombre" id="nombre" name="nombre" placeholder="Nombre..." required><br>
-            <!-- Campo para el apellido -->
-            <label for="apellido"><h1>Apellido</h1></label>
-            <input type="apellido" id="apellido" name="apellido" placeholder="Apellido..." required><br>
-            <!-- Campo para el correo electrónico -->
-            <label for="email"><h1>Correo electrónico</h1></label>
-            <input type="email" id="email" name="email" placeholder="Email..." required><br>
-            <!-- Campo para el mensaje -->
-            <label for="mensaje"><h1>Tu consulta</h1></label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <!-- Botón para enviar el formulario -->
-            <button>Enviar</button>
-        </form>
-        <!-- Sección de redes sociales -->
         <div>
+            <!-- Formulario de contacto -->
+            <form name="formContacto" id="formContacto" action="https://formspree.io/f/xqaklzbo" method="POST" onSubmit="return validarForm()">
+                <h1>Envíanos tu consulta</h1>
+                <!-- Campo para el nombre -->
+                <label for="nombre"><h1>Nombre</h1></label>
+                <input type="nombre" id="nombre" name="nombre" placeholder="Nombre..." required><br>
+                <!-- Campo para el apellido -->
+                <label for="apellido"><h1>Apellido</h1></label>
+                <input type="apellido" id="apellido" name="apellido" placeholder="Apellido..." required><br>
+                <!-- Campo para el correo electrónico -->
+                <label for="email"><h1>Correo electrónico</h1></label>
+                <input type="email" id="email" name="email" placeholder="Email..." required><br>
+                <!-- Campo para el mensaje -->
+                <label for="mensaje"><h1>Tu consulta</h1></label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <!-- Botón para enviar el formulario -->
+                <button>Enviar</button>
+            </form>
+        </div>
+        <!-- Sección de redes sociales -->
+        <div class="DivRedes">
+
+            <img class="logo-circulo" src="./image/logo-circulo.png" alt="Logo">
+            
             <h1 id="redes">Redes:</h1>
             <!-- Iconos de las redes sociales -->
-            <img class="RSocial" src="./image/Fcabook.png" alt="Facebook">
-            <img class="RSocial" src="./image/Instagrampng.png" alt="Instagram">
-            <img class="RSocial" src="./image/Twiter.jpg" alt="Twitter">
-            <img class="RSocial" src="./image/Tik tok1.png" alt="TikTok">
+            <a href="https://www.facebook.com" target="_blank"><img class="RSocial" src="./image/Fcabook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="RSocial" src="./image/Instagrampng.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="RSocial" src="./image/Twiter.jpg" alt="Twitter"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img class="RSocial" src="./image/Tik tok1.png" alt="TikTok"></a>
             <!-- <div class="social-icons"></div>
                 <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -197,8 +190,8 @@
                 <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                 <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div> -->
+            </div> -->
+        </div>
     </footer>
     
     <!-- Scripts de JavaScript necesarios para Bootstrap y los iconos -->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/flavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/ingresar_vehiculo.css">
+    <link rel="stylesheet" href="../css/vehiculos.css">
+    <title>Editar</title>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <section>
+            <div class="container-form">
+                <form>
+                    <div class="entrada">
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" disabled>
+                    </div>
+                    <div class="entrada">
+                        <label for="marca">Marca</label>
+                        <input type="text" name="marca" id="marca">
+                    </div>
+                    <div class="entrada">
+                        <label for="modelo">Modelo</label>
+                        <input type="text" name="modelo" id="modelo">
+                    </div>
+                    <div class="entrada">
+                        <label for="anio">Año</label>
+                        <input type="text" name="anio" id="anio">
+                    </div>
+                    <div class="entrada">
+                        <label for="detalle">Detalle</label>
+                        <textarea name="detalle"  id="detalle" rows="5" cols="30"></textarea>
+                    </div>
+                    <div class="entrada">
+                        <label for="imagen">Imagen</label>
+                        <input type="text" name="imagen" id="imagen" size="60">
+                    </div>
+                    <div class="entrada">
+                        <label for="precio">Precio:</label>
+                        $ <input type="text" name="precio" id="precio">
+                    </div>
+                    <div class="entrada">
+                        <label for="renta">Rentado:</label>
+                        <input type="checkbox" name="renta" id="renta">
+                    </div>
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+                    </div>
+                </form>
+              </div>
+        </section>
+    </main>
+    
+    <footer></footer>
+
+    <script src="../js/editar_vehiculo.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/flavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/vehiculos.css">
+    <title>Vehiculos</title>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+
+        <section class="container">
+            <div id="app" >
+
+                <!-- <a class="nuevo" href="ingresar_vehiculo.html">Nuevo</a> -->
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+
+                    </section>
+                    <section v-else>
+                        
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th >ID</th>
+                                        <th >Marca</th>
+                                        <th >Modelo</th>
+                                        <th >Año</th>
+                                        <th >Detalle</th>
+                                        <th >Imagen</th>
+                                        <th >Precio</th>
+                                        <th >Rentado</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="vehiculo in vehiculos">
+                                        <td >{{vehiculo.id}}</td>
+                                        <td>{{vehiculo.marca}}</td>
+                                        <td>{{vehiculo.modelo}}</td>
+                                        <td>{{vehiculo.anio}}</td>
+                                        <td>{{vehiculo.detalle}}</td>
+                                        <td><a :href=vehiculo.imagen target="_blank" onClick="window.open(this.href, this.target, 'width=900,height=600'); return false;"><img :src=vehiculo.imagen alt="" width="150" height="100"></a></td>
+                                        <td>$&nbsp;{{vehiculo.precio.toLocaleString()}}</td>
+                                        <td v-if="vehiculo.renta==true">SI</td>
+                                        <td v-else>NO</td>
+                                        <td>
+                                            <button type="button"  v-on:click="eliminar(vehiculo.id)">Eliminar</button>
+                                            <br><br>
+                                            <a class="boton" :href="'editar_vehiculo.html?id='+ vehiculo.id+'&marca=' +vehiculo.marca+'&modelo=' +vehiculo.modelo+'&anio=' +vehiculo.anio+'&detalle=' +vehiculo.detalle+'&imagen=' +vehiculo.imagen+'&precio=' +vehiculo.precio+'&renta=' +vehiculo.renta" >Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../js/vehiculos.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

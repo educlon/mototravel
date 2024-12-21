@@ -1,0 +1,148 @@
+/* Formulario de contacto */
+
+.contenedor {
+    width: 90%;
+    max-width: 970px;
+    margin: auto;
+    padding: 0px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-blog {
+    width: 100%;
+	margin-top: 10px;
+    /* background-color: #ccc; */
+}
+
+.blog_table{
+	width: 96%;
+    height: auto;
+    margin: 5px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    background-color: rgb(251, 251, 251);
+    padding-left: 30px;
+   
+}
+
+
+/* label{
+    display: block;
+    float: center;
+} */
+
+h1{
+	font-size: 30px;
+	text-align: letf;
+	padding-bottom: 5px;
+	color: rgb(37, 184, 135);
+}
+
+
+h2{
+	font-size: 16px;
+	padding-bottom: 10px;
+	color: #0e0e0e;
+}
+
+/*Estilos para la tabla */
+
+.estilos-tabla {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   
+}
+
+.estilos-tabla thead tr {
+    background-color: rgb(37, 184, 135);
+    color: #ffffff;
+    text-align: left;
+}
+
+.estilos-tabla th,
+.estilos-tabla td {
+    padding: 12px 15px;
+}
+
+.estilos-tabla tbody tr {
+    border-bottom: 1px solid #dddddd;
+    /* box-sizing: border-box;
+    overflow: auto; */
+}
+
+.estilos-tabla tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+   
+}
+
+.estilos-tabla tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.estilos-tabla tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+.boton{
+    
+    /* color: #f2f2f2; */
+    margin-right: 2vh;
+    background-color: rgb(37, 184, 135); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.boton2{
+    
+    /* color: #f2f2f2; */
+    margin-right: 2vh;
+    background-color: #aaaaaa;
+    color:#000000;
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    /* cursor: pointer; */ /* Cambia el cursor al pasar el ratón */
+}
+
+a:hover{
+    background-color: #aaddb0;
+    color:#001F3F
+}
+
+.si_option {
+    color: rgb(37, 184, 135);
+    font-weight: bolder;
+}
+
+.no_option {
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+
+#tabla_usuarios{
+    box-sizing: border-box;
+    overflow: auto;
+    width: 960px;
+    height: auto;
+}

@@ -121,7 +121,16 @@ footer button:hover {
 /* Estilos para las imágenes de redes sociales */
 footer .RSocial {
     width: 40px; /* Ancho de los iconos */
-    margin: 5px; /* Espacio alrededor de cada icono */
+    margin: 10px; /* Espacio alrededor de cada icono */
+}
+
+footer .DivRedes {
+    margin-top: 80px;
+}
+
+footer .logo-circulo {
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 
 /* Estilos para el modal */
